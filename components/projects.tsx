@@ -22,9 +22,6 @@ interface ProjectType {
 
 
 export default function Projects({projectsData}: {projectsData: ProjectType[]}) {
-
-  console.log("Test: ", projectsData);
-  
   const projects = [
     {
       title: "Enterprise E-Commerce Platform",
