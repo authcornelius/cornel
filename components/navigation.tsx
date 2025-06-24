@@ -34,6 +34,19 @@ export default function Navigation() {
     { href: "#contact", label: "Contact" },
   ]
 
+    // Function to handle CV download
+  const handleDownloadCV = () => {
+    console.log("hello");
+    
+    const link = document.createElement('a')
+    link.href = '/CORNELIUS_OAIKHIENAN.pdf' // Direct path to file in public folder
+    link.download = 'CORNELIUS_OAIKHIENAN.pdf'
+    link.target = '_blank' // Optional: opens in new tab first
+    document.body.appendChild(link)
+    link.click()
+    document.body.removeChild(link)
+  }
+
   return (
     <>
       <nav
@@ -50,7 +63,7 @@ export default function Navigation() {
             </div>
 
             {/* Desktop Navigation */}
-                        <div className="hidden lg:flex items-center space-x-8">
+            <div className="hidden lg:flex items-center space-x-8">
               {navItems.map((item) => (
                 <a
                   key={item.href}
@@ -60,7 +73,10 @@ export default function Navigation() {
                   {item.label}
                 </a>
               ))}
-              <Button className="bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 text-white shadow-lg">
+              <Button 
+                className="bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 text-white shadow-lg"
+                onClick={handleDownloadCV}
+              >
                 Download CV
               </Button>
 
@@ -149,7 +165,10 @@ export default function Navigation() {
 
           {/* Footer with Download CV Button */}
           <div className="p-6 border-t border-slate-200">
-            <Button className="w-full bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 text-white shadow-lg">
+            <Button 
+              className="w-full bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 text-white shadow-lg"
+              onClick={handleDownloadCV}
+            >
               Download CV
             </Button>
             
