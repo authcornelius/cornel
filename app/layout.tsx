@@ -6,9 +6,9 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Cornelius Oaikhienan Johnson - Senior Full Stack Developer",
+  title: "Cornelius Oaikhienan - Senior Full Stack Developer",
   description:
-    "Professional portfolio of Cornelius Oaikhienan Johnson, Senior Full Stack Developer with 8+ years of experience in React, Node.js, and cloud technologies.",
+    "Professional portfolio of Cornelius Oaikhienan, Senior Full Stack Developer with 8+ years of experience in React, Node.js, and cloud technologies.",
   keywords:
     "Full Stack Developer, React, Node.js, JavaScript, TypeScript, AWS, Software Engineer",
   generator: "v0.dev",
